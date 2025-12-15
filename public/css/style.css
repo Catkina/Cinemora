@@ -1,0 +1,879 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* Header */
+.PT-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 16px 40px;
+    background: #181B24;
+    color: white;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease; 
+    position: fixed;
+    z-index: 1000;
+}
+
+.PT-header.shrink {
+    padding: 10px 40px;
+    background: #0a0a0a;
+}
+
+/* Logo */
+.PT-logoimg {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.PT-logotext {
+    font-size: 30px;
+    font-weight: 700;
+}
+.PT-logotext p{
+    font-size: 13px;
+    font-weight: 400;
+}
+.PT-footer-logo h2 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.Pt-footer-logo p {
+    margin: 0;
+    opacity: 0.8;
+}
+/* Search */
+.PT-search-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 0px;
+    transition: 0.2s;
+}
+
+.PT-search-btn:hover {
+    color: #f6d36a; /* Màu vàng khi hover */
+}
+
+/* Menu */
+.PT-header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 25px;
+}
+
+  .PT-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.PT-menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.PT-menu-item a {
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 16px;
+    transition: color .2s;
+}
+
+.PT-menu-item:hover > a {
+    color: #fff;
+}
+
+.PT-menu-item i {
+    font-size: 12px;
+    color: #aaa;
+}
+.PT-dropdown {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    min-width: 180px;
+
+    background: linear-gradient(180deg, #0f172a, #020617);
+    border-radius: 12px;
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all .25s ease;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.5);
+    z-index: 999;
+}
+.PT-dropdown a {
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #d1d5db;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.PT-dropdown a:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+.PT-has-dropdown:hover > .PT-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* Dropdown Thể loại */
+.PT-menu-item:nth-child(3) .PT-dropdown {
+    min-width: 320px;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* Dropdown Quốc gia */
+.PT-menu-item:nth-child(4) .PT-dropdown {
+    min-width: 200px;
+}
+/* Dropdown Thêm */
+.PT-menu-item:nth-child(5) .PT-dropdown {
+    min-width: 160px;
+}
+.PT-user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.PT-user img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.PT-user .PT-dropdown {
+    right: 0;
+    left: auto;
+    min-width: 200px;
+}
+
+/* User */
+
+.PT-profile-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Avatar */
+.PT-user img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+/* BUTTON */
+.PT-user-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 11px 15px;
+  border-radius: 999px;
+
+  background: #ffffff;
+  text-decoration: none;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: all 0.25s ease;
+}
+
+.PT-user-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* ICON */
+.PT-user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PT-user-icon i {
+  font-size: 14px;
+}
+
+
+
+/*BANNER*/
+.PT-hero-banner {
+    position: relative;
+    width: 100%;
+    height: 60vw;
+    max-height: 700px;
+    background-image: url('../Images/Home/BannerConan.svg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+/* Lớp overlay tối mờ */
+.PT-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10,10,10,0.75), rgba(10,10,10,0.1));
+}
+
+/* Nội dung bên trái */
+.PT-banner-content {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    color: white;
+    width: 45%;
+}
+
+.PT-movie-subtitle {
+    font-size: 15px;
+    margin: 10px 0 20px;
+}
+
+.PT-movie-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.PT-tag {
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.PT-tag.PT-imdb {
+    background: rgb(255, 255, 255,0.1);
+    color: rgb(255, 226, 63);
+    font-weight: 400;
+    border-color: rgb(255, 255, 255);
+}
+
+.PT-movie-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+.PT-movie-tags-category{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.PT-tag-category {
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.PT-banner-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.PT-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.PT-btn.PT-play {
+    background: #f6d36a;
+    color: #000;
+}
+.PT-btn.PT-play:hover {
+    filter: brightness(1.1);
+}
+
+.PT-btn.PT-like,
+.PT-btn.PT-info {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+}
+
+.PT-btn.PT-info:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Slider nhỏ bên phải */
+.PT-banner-thumbs {
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+    display: flex;
+    gap: 10px;
+}
+
+.PT-banner-thumbs img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.PT-banner-thumbs img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*Chủ đề*/
+
+body {
+    background: #181B24;
+    font-family: Inter, sans-serif;
+    color: white;
+}
+
+.PT-container {
+    padding: 30px;
+}
+
+.PT-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.PT-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+/* BOX STYLE */
+.PT-topic-box {
+    padding: 22px;
+    border-radius: 18px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.PT-topic-box:hover {
+    transform: scale(1.03);
+}
+
+/* GRADIENT BACKGROUNDS */
+.gradient-blue {
+    background: linear-gradient(135deg, #4b6ef6, #2244c8);
+}
+
+.gradient-purple {
+    background: linear-gradient(135deg, #b49af0, #8c76d8);
+}
+
+.gradient-green {
+    background: linear-gradient(135deg, #3ed4a1, #2ea67f);
+}
+
+.gradient-purple-soft {
+    background: linear-gradient(135deg, #d1b7ff, #a889e0);
+}
+
+.gradient-orange {
+    background: linear-gradient(135deg, #f7b38a, #df8e63);
+}
+
+.gradient-red {
+    background: linear-gradient(135deg, #e69898, #c76a6a);
+}
+
+/* LINK */
+.PT-topic-box a {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.PT-topic-box a:hover {
+    opacity: 1;
+}
+
+/* Ô +4 CHỦ ĐỀ */
+.more-topics {
+    background: linear-gradient( #353535, #1b1b1b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Các phim */
+/* === Khung gradient nằm giữa trang === */
+.PT-movie-sections-bg {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #272A39, #181B24);
+  border-radius: 16px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.PT-movie-sections-inner {
+  width: 100%;
+  max-width: 85vw;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px 0;
+}
+
+/* --- MỖI KHỐI PHIM (Hàn – Trung – US-UK) --- */
+.PT-movie-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  overflow: visible; 
+}
+
+/* ================== CỘT TRÁI ================== */
+.PT-left-side {
+  width: 200px;
+}
+
+.PT-section-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.PT-see-all {
+  color: #ffffffcc;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;      
+}
+
+/* ================== CỘT PHẢI ================== */
+.PT-right-side {
+  flex: 1;
+}
+
+.PT-movie-list {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+}
+
+/* ================== MOVIE CARD ================== */
+.PT-movie-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;         
+  margin-right: 10px;
+}
+
+.PT-movie-card {
+  width: 100%;
+  border-radius: 8px;
+  background: #1e202c;
+}
+.PT-movie-img {
+height: 250px;
+}
+
+/* ================== ẢNH ================== */
+.PT-mv-thumb {
+  position: relative;
+  width: 100%;
+  height: 200px;     
+  border-radius: 10px;
+  background: #000;
+}
+
+.PT-mv-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+/* ================== TÊN PHIM ================== */
+.PT-movie-title { 
+  text-align: center;
+  margin-top: 15px;
+}
+
+.PT-mv-name {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.PT-mv-sub {
+  color: #cccccc;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+/* ================== TAGS ================== */
+.PT-tags-row {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.PT-tag {
+  background: #ffcc00;
+  color: #000;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.PT-movie-slider {
+  position: relative;
+   overflow: visible; 
+}
+
+.PT-prev-btn, .PT-next-btn {
+     position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px; 
+    color: #ffffffbb;
+    z-index: 20;
+}
+
+.PT-prev-btn {
+  left: -25px;
+}
+
+.PT-next-btn {
+  right: -15px; 
+}
+
+.PT-prev-btn:hover, .PT-next-btn:hover {
+  transform: translateY(-50%) scale(1.15);
+  color: #ffd700;
+}
+/*Footer */
+.PT-footer {
+    background: #0d0f17;
+    padding: 50px 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.PT-footer-container {
+    width: 95%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.PT-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+    padding-bottom: 25px;
+}
+
+.PT-footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.PT-footer-logo img {
+    width: 55px;
+}
+
+.PT-footer-logo h2 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.Pt-footer-logo p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.PT-footer-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.PT-footer-links a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.PT-footer-links a:hover {
+    opacity: 1;
+}
+
+.PT-footer-socials a {
+    font-size: 20px;
+    margin-left: 12px;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.PT-footer-socials a:hover {
+    opacity: 1;
+}
+
+.PT-footer-categories {
+    margin: 20px 0;
+    display: flex;
+    gap: 25px;
+}
+
+.PT-footer-categories a {
+    color: #fff;
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.PT-footer-categories a:hover {
+    opacity: 1;
+}
+
+.PT-footer-desc {
+    margin-top: 20px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.PT-footer-copy {
+    margin-top: 25px;
+    opacity: 0.7;
+}
+
+
+
+
+
+/*TRANG TÌM KIẾM*/
+/* Search box wrapper */
+.PT-search-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.PT-search-box {
+    display: flex;
+    align-items: center;
+    background: #1c1f24;
+    padding: 10px 20px;
+    border-radius: 40px;
+    gap: 10px;
+}
+
+.PT-search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 300px;
+}
+
+.PT-search-submit {
+    background: white;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Trending section */
+.PT-trending-container {
+    width: 100%;
+    margin: auto;
+}
+
+.PT-trending-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.PT-movie-list {
+    display: flex;
+    justify-content: center;   
+    gap: 18px;
+    flex-wrap: wrap;  
+}
+
+.PT-movie-item {
+    min-width: 195px;
+}
+
+.PT-movie-item img {
+    width: 210px;
+    height: 107px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.PT-movie-name {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/*TRANG TRẢ KQ TÌM KIẾM*/
+
+
+.PT-section {
+    padding: 25px 40px;
+}
+
+.PT-section-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -20px;
+}
+.PT-slider-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    overflow: visible; 
+}
+
+/* Container chứa các card */
+.PT-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    width: 100%;
+}
+
+.PT-card {
+    width: 214px;
+    height: auto;
+    object-fit: cover;
+}
+
+.PT-name-card {
+    margin-top: 8px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 4px 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* bắt buộc 1 dòng */
+}
+
+.PT-card img {
+    width: 214px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.PT-prev-btn-result, .PT-next-btn-result {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 10; 
+}
+
+.PT-prev-btn-result {
+  left: -50px; 
+}
+
+.PT-next-btn-result {
+  right: -50px;
+}
+
+.PT-prev-btn-result:hover, .PT-next-btn-result:hover {
+  transform: translateY(-50%) scale(1.15);
+  color: #ffd700;
+}
+
+.AT-content{
+    padding-top: 84px;
+}

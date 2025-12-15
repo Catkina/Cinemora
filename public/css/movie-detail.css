@@ -1,0 +1,201 @@
+/* -------------------------
+   BANNER 
+--------------------------*/
+.TTheader-banner img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+
+/* -------------------------
+   MAIN WRAPPER 
+--------------------------*/
+.TTcontainer {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+/* -------------------------
+   LEFT BOX 
+--------------------------*/
+.TTleft-box {
+    width: 300px;
+    color: #ccc;
+}
+
+.TTposter {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.TTtitle {
+    font-size: 26px;
+    color: white;
+}
+
+.TTsubtitle {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.TTbadges {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.TTbadge {
+    background: #26262e;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.TTtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.TTtags span {
+    background: #1c1c22;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.TTdesc-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.TTdesc {
+    margin: 8px 0 14px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.TTinfo-box p {
+    margin: 6px 0;
+}
+
+
+/* -------------------------
+   RIGHT BOX 
+--------------------------*/
+.TTright-box {
+    flex: 1;
+}
+
+/* Action bar */
+.TTaction-bar {
+    background: #14141a;
+    padding: 16px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TTwatch-btn {
+    background: linear-gradient(to right, #ffd86f, #ffb72d);
+    padding: 12px 28px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #222;
+    font-weight: bold;
+}
+
+.TTactions-small span {
+    margin-left: 18px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.TTrating {
+    background: #1f1f2b;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* Tabs */
+.TTtabs {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0 14px;
+}
+
+.TTtab {
+    color: #aaa;
+    cursor: pointer;
+}
+
+.TTactive {
+    color: white;
+    font-weight: bold;
+}
+
+/* Notice */
+.TTnotice {
+    background: #b46cff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Episode section */
+.TTpart-dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.TTep-list {
+    display: flex;
+    gap: 12px;
+}
+
+.TTep {
+    background: #24242c;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+}
+
+/* Comments */
+.TTcomment-box {
+    background: #14141a;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 40px;
+}
+
+.TTinput {
+    width: 100%;
+    height: 100px;
+    background: #1c1c22;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+.TTsend {
+    margin-top: 10px;
+    float: right;
+    padding: 8px 20px;
+    background: #ffb52e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

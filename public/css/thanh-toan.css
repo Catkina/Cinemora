@@ -1,0 +1,236 @@
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: sans-serif;
+    }
+
+    body{
+        background:#0d0f18;
+        color:#fff;
+    }
+
+    /* HEADER */
+    .NN-header{
+        background:#12141f;
+        padding:20px 40px;
+        display:grid;
+        grid-template-columns: auto 1fr auto;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .NN-logo{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .NN-steps{
+        display:flex;
+        align-items:center;
+        gap:50px;
+        padding-right: 150px;
+        justify-self: center;
+    }
+
+    .NN-step{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        color:#bbb;
+        font-size:13px;
+    }
+
+    .NN-circle{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid #ffca58;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        position: relative;
+        z-index: 2;
+    }
+
+    .NN-circle.active{
+        background:#ffffff;
+        border-color:#00d26a;
+        color:#000;
+        box-shadow:0 0 10px #00d26a;
+    }
+    .NN-circle.active1{
+        background:#00d26a;
+        border-color:#ffffff;
+        color:#000;
+        box-shadow:0 0 10px #00d26a;
+    }
+
+    .NN-line{
+        width: 200px;
+        height: 2px;
+        background: #e0f8a8;
+        position: relative;
+        top: -16px;
+        z-index: 1;
+    }
+
+    /* MAIN LAYOUT */
+    .NN-container{
+        padding:40px 60px;
+        display:flex;
+        justify-content:space-between;
+        gap:40px;
+    }
+
+    .NN-left{
+        width:60%;
+    }
+
+    .NN-title{
+        font-size:26px;
+        margin-bottom:15px;
+    }
+
+    .NN-subtitle{
+        color:#bbb;
+        font-size:14px;
+        margin-bottom:20px;
+    }
+
+    /* PAYMENT OPTIONS */
+    .NN-option{
+        background:#131722;
+        padding:18px;
+        border-radius:12px;
+        border:2px solid transparent;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:12px;
+        cursor:pointer;
+        transition:0.2s;
+    }
+
+    .NN-option:hover{
+        background:#1b2030;
+    }
+
+    .NN-option.active{
+        border-color:#ffca58;
+        background:#1a1d2b;
+    }
+
+    .NN-option label{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        font-size:15px;
+        color:#ddd;
+    }
+
+    .NN-radio{
+        width:18px;
+        height:18px;
+        border-radius:50%;
+        border:2px solid #ffca58;
+        position:relative;
+    }
+
+    .NN-radio::after{
+        content:"";
+        width:10px;
+        height:10px;
+        background:#ffca58;
+        border-radius:50%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        opacity:0;
+    }
+
+    .NN-option.active .radio::after{
+        opacity:1;
+    }
+
+    /* RIGHT CARD */
+    .NN-card{
+        background:#ffffff;
+        width:35%;
+        border-radius:16px;
+        padding:25px;
+        color:#000;
+    }
+
+    .NN-card-title{
+        font-size:20px;
+        font-weight:bold;
+        margin-bottom:15px;
+    }
+
+    .NN-info-row{
+        display:flex;
+        justify-content:space-between;
+        padding:8px 0;
+        font-size:14px;
+        border-bottom:1px solid #e0e0e0;
+    }
+
+    .NN-info-row:last-child{
+        border-bottom:none;
+    }
+
+    .NN-price-box{
+        margin-top:25px;
+        padding:15px;
+        background:#e8fff1;
+        border-radius:10px;
+        text-align:center;
+        font-size:24px;
+        font-weight:700;
+        color:#00b44b;
+    }
+
+    .NN-pay-btn{
+        margin-top:15px;
+        text-align: center;
+        width:100%;
+        background:#00c95e;
+        border:none;
+        padding: 12px 25px;
+        border-radius:10px;
+        color:#fff;
+        font-weight:bold;
+        cursor:pointer;
+        font-size:16px;
+        display: inline-block;
+    }
+
+    /* FOOTER */
+    .NN-footer{
+        margin-top:40px;
+        margin-bottom: 10px;
+        background:#12141f;
+        padding:35px;
+        color:#bbb;
+    }
+    
+    .NN-footer h3{
+        color:#fff;
+        margin-bottom:10px;
+    }
+    .NN-step-text1 {
+        margin-top: 6px;
+        font-size: 13px;
+        color: #ffba3a;
+    }
+    .NN-step-text {
+        margin-top: 6px;
+        font-size: 13px;
+        color: #bababa;
+    }

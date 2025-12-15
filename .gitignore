@@ -1,0 +1,79 @@
+
+# OS generated files
+.DS_Store # macOS folder settings
+Thumbs.db # Windows image file cache
+Desktop.ini # Windows desktop icon settings
+
+# Editor directories and files
+.vscode/   # Visual Studio Code settings
+.idea/   # IntelliJ IDEA settings
+*.swp   # Vim swap files
+*.swo   # Vim swap files
+*.swn   # Vim swap files
+
+# Temporary or cache files
+*.tmp   # Temporary files
+*.temp  # Temporary files
+*.cache   # Cache files
+*.bak   # Backup files
+
+# Others
+*.log   # Log files
+
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========================
+# Environment variables / secrets
+# ========================
+.env
+.env.local
+.env.development
+.env.production
+
+# ========================
+# Build / Dist folders
+# ========================
+dist/
+build/
+.out/
+.parcel-cache/
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+
+# ========================
+# Database (local)
+# ========================
+*.sqlite
+*.sqlite3
+*.db
+
+# ========================
+# OS / Editor files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDE / Editor settings
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Temporary files
+# ========================
+tmp/
+temp/

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Phim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie-detail.css">
+    <link rel="stylesheet" href="css/list-style.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<%- include('partials/header', { user }) %>
+
+<!-- CONTENT -->
+<div class="AT-content">
+    <!-- HERO BANNER -->
+    <div class="TTheader-banner">
+        <img src="Images/trangtt/Main cap.png" alt="">
+    </div>
+
+    <!-- MAIN SECTION -->
+    <div class="TTcontainer">
+
+        <!-- POSTER + INFO -->
+        <div class="TTleft-box">
+
+            <img src="Images/trangtt/movie.png" class="TTposter">
+
+            <h2 class="TTtitle">Mong Ngày Mai Đến</h2>
+            <p class="TTsubtitle">Surely Tomorrow</p>
+
+            <div class="TTbadges">
+                <span class="TTbadge">IMDb 8.4</span>
+                <span class="TTbadge">T16</span>
+                <span class="TTbadge">2025</span>
+                <span class="TTbadge">Phần 1</span>
+                <span class="TTbadge">Tập 2</span>
+            </div>
+
+            <div class="TTtags">
+                <span>Tình Cảm</span>
+                <span>Đời Thường</span>
+                <span>Hài</span>
+                <span>Tuổi Trẻ</span>
+                <span>Nghề Nghiệp</span>
+                <span>Lãng Mạn</span>
+            </div>
+
+            <p class="TTdesc-title">Giới thiệu:</p>
+            <p class="TTdesc">
+                Lee Gyeom Woo là CEO lớn. Một ngày anh vô tình gặp Ji Seo Woo, 
+                một cô gái có nụ cười ấm áp. Cả hai bị cuốn vào mối quan hệ đầy rung động…
+            </p>
+
+            <div class="TTinfo-box">
+                <p><strong>Thời lượng:</strong> 1h02m</p>
+                <p><strong>Quốc gia:</strong> Hàn Quốc</p>
+                <p><strong>Network:</strong> JTBC</p>
+                <p><strong>Studio:</strong> SLL, Storyforest</p>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+        <div class="TTright-box">
+
+            <!-- BUTTONS -->
+            <div class="TTaction-bar">
+                <a href="/trang-xem"><button class="TTwatch-btn">▶ Xem Ngay</button></a>
+                <div class="TTactions-small">
+                    <span>🤍 Yêu thích</span>
+                    <span>➕ Thêm vào</span>
+                    <span>📤 Chia sẻ</span>
+                    <span>💬 Bình luận</span>
+                    <span class="TTrating">⭐ 9.0</span>
+                </div>
+            </div>
+
+            <!-- TABS -->
+            <div class="TTtabs">
+                <span class="TTtab TTactive">Tập phim</span>
+                <span class="TTtab">Gallery</span>
+                <span class="TTtab">Diễn viên</span>
+                <span class="TTtab">Đề xuất</span>
+            </div>
+
+            <!-- NOTIFICATION -->
+            <div class="TTnotice">
+                📢 Tập 3 sẽ phát sóng lúc 05:00 ngày 14-12-2025 nhé 💜
+            </div>
+
+            <!-- EPISODE LIST -->
+            <div class="TTep-section">
+
+                <div class="TTpart-dropdown">
+                    <span class="TTpart-title">Phần 1 ▼</span>
+                    <span class="TTsub">Phụ đề</span>
+                </div>
+
+                <div class="TTep-list">
+                    <button class="TTep">Tập 1</button>
+                <button class="TTep" onclick="location.href='Trang xem.html'">Tập 2</button>
+                </div>
+
+            </div>
+
+            <!-- COMMENTS -->
+            <div class="TTcomment-box">
+                <h3>Bình luận (47)</h3>
+
+                <textarea class="TTinput" placeholder="Viết bình luận..."></textarea>
+
+                <button class="TTsend">Gửi ➤</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<%- include('partials/footer') %>
+</body>
+</html>

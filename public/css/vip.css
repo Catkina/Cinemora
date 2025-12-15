@@ -1,0 +1,237 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background: #0d0f18;
+            color: #fff;
+        }
+
+        /* HEADER */
+        .NN-header{
+            background:#12141f;
+            padding:20px 40px;
+            display:grid;
+            grid-template-columns: auto 1fr auto;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .NN-logo{
+            display:flex;
+            flex-direction:column;
+        }
+
+        .NN-logo h2 {
+            color: #ffffff;
+        }
+
+        .NN-steps{
+            display:flex;
+            align-items:center;
+            gap:50px;
+            padding-right: 150px;
+            justify-self: center;
+        }
+
+        .NN-step{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            color:#bbb;
+            font-size:13px;
+        }
+
+        .NN-step.active {
+            background: #ffb629;
+            color: #000;
+        }
+
+        .NN-circle{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #ffca58;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            position: relative;
+            z-index: 2;
+        }
+
+        .NN-circle.active{
+            background:#ffffff;
+            border-color:#00d26a;
+            color:#000;
+            box-shadow:0 0 10px #00d26a;
+        }
+
+        .NN-line {
+            width: 200px;
+            height: 2px;
+            background: #e0f8a8;
+            position: relative;
+            top: -16px;
+            z-index: 1;
+        }
+        .NN-step-text1 {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #ffba3a;
+        }
+
+        .NN-step-text {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #bababa;
+        }
+
+
+        /* MAIN */
+        .NN-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .NN-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .NN-benefits span {
+            background: #1a1d2d;
+            padding: 7px 14px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        .NN-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .NN-benefit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #d5d5d5;
+            gap: 8px;
+        }
+
+        .NN-icon {
+            width: 18px;
+            height: 18px;
+            background: #ffca58;
+            color: #000;
+            font-weight: bold;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+
+        /* PACKAGE CARDS */
+        .NN-packages {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .NN-card {
+            background: #1a1d2d;
+            padding: 15px;
+            border-radius: 16px;
+            position: relative;
+            transition: 0.25s;
+        }
+
+        .NN-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .NN-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .NN-card h3 {
+            margin-top: -100px;
+            margin-left: 10px;
+            font-size: 20px;
+            text-align: left;
+
+        }
+
+        .NN-price {
+            font-size: 22px;
+            color: #ffca58;
+            margin: 10px 10px;
+            text-align: left;
+        }
+
+        .NN-select-btn1 {
+            background: #ffba3a;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            color: #000;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+        .NN-select-btn2 {
+            background: #ffffff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            color: #ffba3a;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        .NN-premium {
+            border: 2px solid #ffba3a;
+        }
+
+        .NN-badge {
+            position: absolute;
+            top: -12px;
+            right: 30px;
+            left: 30px;
+            background: #ffba3a;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        /* CONTINUE BUTTON */
+        .NN-continue-btn {
+            background: #ffba3a;
+            padding: 12px 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            color: #000;
+            display: inline-block;
+        }
+
+        
+

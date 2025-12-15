@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="/css/login-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="/Images/Login/loginbg.jpg" as="image">
+</head>
+<body>
+    <div id="AT-background"></div>
+    <div id="AT-frame">
+        <div class="AT-login-board">
+            <div class="AT-logo-container">
+                <a href="/">
+                    <img alt="Logo Cinemora" src="/Images/Login/logo.svg">
+                </a>
+            </div>
+            <div class="AT-content">
+                <div class="AT-main">
+                    <div class="AT-heading">Đăng nhập</div>
+                    <div>Quản lý và nâng cấp tài khoản</div>
+
+                    <% if (error) { %>
+                        <div class="AT-error">
+                            <%= error %>
+                        </div>
+                    <% } %>
+                    <form class="AT-form" method="POST" action="/login">
+                        <input class="AT-input" required="" placeholder="Email" type="email" name="email" required>
+                        <input class="AT-input" required="" placeholder="Mật khẩu" type="password" name="password" required>
+                        <div class="AT-buttons">
+                            <button class="AT-btn AT-btn-light" type="submit">Đăng nhập</button>
+                            <button class="AT-btn AT-btn-dark" type="button">
+                                <img src="/Images/Login/google.svg" alt="Google" id="AT-icon">
+                                <span>Đăng nhập bằng Google</span>
+                            </button>
+                            <div class="AT-button-row">
+                                <a class="AT-btn AT-btn-default" href="/quen-mat-khau">Quên mật khẩu</a>
+                                <a class="AT-btn AT-btn-default light-text" href="/signup">Tạo tài khoản mới   ➜</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="AT-login-board copyright"><span>© Copyright 2025 <span style="color:#A4A9A8">Cinemora</span></span></div>
+        </div>
+    </div>
+</body>
+</html>

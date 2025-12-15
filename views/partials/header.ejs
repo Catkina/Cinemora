@@ -1,0 +1,103 @@
+<header class="PT-header">
+  <a class="PT-brand" href="/">
+    <img src="/Images/Home/Logo.svg" alt="Logo" class="PT-logoimg">
+  </a>
+
+  <div class="PT-logotext">
+    Cinemora
+    <p>Đỉnh cao điện ảnh</p>
+  </div>
+
+  <div class="PT-header-right">
+    <a href="/search">
+        <button class="PT-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </a>
+
+    <nav class="PT-menu">
+        <ul class="PT-menu-list">
+
+            <li class="PT-menu-item"><a href="#">Phim bộ</a></li>
+            <li class="PT-menu-item"><a href="#">Phim lẻ</a></li>
+
+            <!-- THỂ LOẠI -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Thể loại</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="#">Hành động</a>
+                    <a href="/trang-ds">Tình cảm</a>
+                    <a href="#">Kinh dị</a>
+                    <a href="#">Hài</a>
+                    <a href="#">Anime</a>
+                    <a href="#">Trinh thám</a>
+                    <a href="#">Cổ trang</a>
+                    <a href="#">Sci-Fi</a>
+                    <a href="#">Gia đình</a>
+                    <a href="#">Fantasy</a>
+
+                </div>
+            </li>
+
+            <!-- QUỐC GIA -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Quốc gia</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="#">Hàn Quốc</a>
+                    <a href="#">Trung Quốc</a>
+                    <a href="#">Mỹ</a>
+                    <a href="#">Nhật Bản</a>
+                    <a href="#">Việt Nam</a>
+                    <a href="#">Thái Lan</a>
+                    <a href="#">Đài</a>
+                    <a href="#">Pháp</a>
+                    <a href="#">Hồng Kông</a>
+                </div>
+            </li>
+
+            <!-- THÊM -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Thêm</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="#">Lịch chiếu</a>
+                    <a href="#">Chủ đề</a>
+
+                </div>
+            </li>
+
+            <li class="PT-menu-item"><a href="#">Tải ứng dụng Cinemora</a></li>
+        </ul>
+    </nav>
+
+    <!-- USER -->
+    <% if (!user) { %>
+        <!-- CHƯA ĐĂNG NHẬP -->
+        <div class="PT-user">
+          <a href="/login" class="PT-user-btn">
+            <i class="fa-solid fa-user"></i>
+            <span>Thành viên</span>
+          </a>
+        </div>
+    <% } else { %>
+        <!-- ĐÃ ĐĂNG NHẬP -->
+        <div class="PT-user PT-has-dropdown">
+          <img src="/Images/Home/User.svg" alt="User Icon">
+          <i class="fa-solid fa-caret-down"></i>
+
+          <div class="PT-dropdown">
+            <a href="#">Thông tin cá nhân</a>
+            <a href="/vip">Nâng cấp tài khoản</a>
+            <a href="#">Lịch sử xem</a>
+            <a href="#">Danh sách yêu thích</a>
+            <a href="/logout">Đăng xuất</a>
+          </div>
+        </div>
+    <% } %>
+  </div>
+</header>

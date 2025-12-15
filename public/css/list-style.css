@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: #0f0f14;
+    color: white;
+}
+
+/* HEADER */
+.TTheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background-color: #14141a;
+    border-bottom: 1px solid #222;
+}
+
+.TTlogo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.TTsearch-box input {
+    width: 320px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: #1c1c22;
+    color: white;
+}
+
+/* NAV */
+.TTnav a {
+    margin: 0 12px;
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.TTnav a:hover {
+    color: white;
+}
+
+/* TITLE + FILTER */
+.TTcategory-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.TTcategory-title h2 {
+    font-size: 24px;
+}
+
+.TTfilter-btn {
+    background: #26262e;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.TTfilter-btn:hover {
+    background: #32323c;
+}
+
+/* MOVIE GRID */
+.TTmovie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 24px;
+    padding: 0 40px 40px;
+}
+
+.TTmovie-card {
+    background-color: #1a1a20;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.TTmovie-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.TTmovie-card h4,
+.TTmovie-card h5 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.TTtag {
+    margin-top: 6px;
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 8px;
+    background: #2e2e38;
+    border-radius: 6px;
+}
+
+/* PAGINATION */
+.TTpagination {
+    text-align: center;
+    padding: 20px;
+}
+
+.TTpagination button {
+    background: #24242c;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.TTpagination span {
+    margin: 0 12px;
+}
+
+/* FOOTER */
+.TTfooter {
+    background: #14141a;
+    padding: 30px 40px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}

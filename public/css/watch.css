@@ -1,0 +1,268 @@
+/* ————————————————
+   TITLE BAR
+——————————————— */
+.TTwatch-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 40px;
+    background: #0d0d11;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.TTback {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* ————————————————
+   VIDEO SECTION
+——————————————— */
+.TTvideo-box {
+    position: relative;
+    width: 800px;      
+    height: 450px;     
+    margin: 0 auto;   
+}
+
+.TTvideo-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.TTplay-btn {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.2);
+    padding: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/* ————————————————
+   MAIN CONTAINER
+——————————————— */
+.TTwatch-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* LEFT CONTENT */
+.TTleft {
+    flex: 1.4;
+}
+
+/* ACTION BAR */
+.TTactionBar {
+    background: #14141a;
+    padding: 14px 20px;
+    border-radius: 14px;
+    display: flex;
+    gap: 18px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.TTactive-btn {
+    background: #ffd966;
+    color: black;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+
+/* SUMMARY SECTION */
+.TTmovie-summary {
+    display: flex;
+    gap: 20px;
+}
+
+.TTposter {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.TTmovie-info {
+    color: #bbb;
+}
+
+.TTtitle {
+    color: white;
+    font-size: 24px;
+}
+
+.TTsubtitle {
+    margin-bottom: 8px;
+    color: #aaa;
+}
+
+.TTbadges span,
+.TTtags span {
+    background: #22222a;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+.TTdesc {
+    margin: 12px 0;
+}
+
+.TTmore {
+    color: #ffd966;
+    text-decoration: none;
+}
+
+/* Notice */
+.TTnotice {
+    background: #b46cff;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+/* EPISODES */
+.TTepisodes {
+    background: #14141a;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.TTep-head {
+    display: flex;
+    justify-content: space-between;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.TTep-list {
+    display: flex;
+    gap: 14px;
+}
+
+.TTep-btn {
+    padding: 12px 20px;
+    background: #22222a;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.TTactive-ep {
+    background: #ffd966;
+    color: black;
+}
+
+/* COMMENTS */
+.TTcomment-box {
+    margin-top: 40px;
+    background: #14141a;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.TTcomment-switch button {
+    background: none;
+    color: #aaa;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.TTcomment-switch .TTactive {
+    color: white;
+    font-weight: bold;
+}
+
+.TTcomment-input {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    background: #1c1c22;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+    color: white;
+}
+
+.TTsend {
+    margin-top: 14px;
+    padding: 8px 20px;
+    float: right;
+    background: #ffd966;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* ————————————————
+   RIGHT SIDEBAR
+——————————————— */
+.TTright {
+    width: 320px;
+}
+
+/* Cast */
+.TTcast-box {
+    background: #14141a;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.TTcast {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 14px;
+    color: #ccc;
+}
+
+.TTcast img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Recommend */
+.TTrecommend {
+    background: #14141a;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.TTrec-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.TTrec-item img {
+    width: 55px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+.TTfooter {
+    padding: 30px;
+    color: #777;
+    text-align: center;
+    margin-top: 60px;
+}

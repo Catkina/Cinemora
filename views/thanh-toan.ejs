@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Cinemora - Thanh toán</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/thanh-toan.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="NN-header">
+    <div class="NN-logo">
+        <h2>Cinemora</h2>
+        <p>Đỉnh cao điện ảnh</p>
+    </div>
+
+    <div class="NN-steps">
+        <div class="NN-step">
+            <div class="NN-circle active1">✔</div>
+            <span class="NN-step-text1">Chọn gói</span>
+        </div>
+
+        <div class="NN-line"></div>
+
+        <div class="NN-step">
+            <div class="NN-circle active">2</div>
+            <span class="NN-step-text1">Thanh toán</span>
+        </div>
+
+        <div class="NN-line"></div>
+
+        <div class="NN-step">
+            <div class="NN-circle">3</div>
+           <span class="NN-step-text">Kết quả</span> 
+        </div>
+    </div>
+</header>
+
+<!-- MAIN -->
+<div class="NN-container">
+
+    <!-- LEFT SIDE -->
+    <div class="NN-left">
+        <h2 class="NN-title">Chọn phương thức thanh toán</h2>
+        <p class="NN-subtitle">Bạn có thể chọn một phương thức thanh toán để hoàn tất đăng ký gói VIP.</p>
+
+        <div class="NN-option active">
+            <label>
+                <div class="NN-radio"></div> Momo
+            </label>
+        </div>
+
+        <div class="NN-option">
+            <label>
+                <div class="NN-radio"></div> Ví điện tử ZaloPay
+            </label>
+        </div>
+
+        <div class="NN-option">
+            <label>
+                <div class="NN-radio"></div> Thẻ thanh toán quốc tế (Visa/MasterCard/JCB)
+            </label>
+        </div>
+
+        <div class="NN-option">
+            <label>
+                <div class="NN-radio"></div> Quét mã QR VietPay
+            </label>
+        </div>
+
+        <div class="NN-option">
+            <label>
+                <div class="NN-radio"></div> Thẻ ATM / Ngân hàng nội địa
+            </label>
+        </div>
+
+        <div class="NN-option">
+            <label>
+                <div class="NN-radio"></div> Ví điện tử ShopeePay
+            </label>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="NN-card">
+        <div class="NN-card-title">Thông tin thanh toán</div>
+
+        <div class="NN-info-row"><span>Gói VIP</span><span>1 Tháng</span></div>
+        <div class="NN-info-row"><span>Ngày bắt đầu</span><span>05/12/2025</span></div>
+        <div class="NN-info-row"><span>Ngày hết hạn</span><span>05/01/2026</span></div>
+        <div class="NN-info-row"><span>Tổng cộng</span><span>39.000 VND</span></div>
+
+        <div class="NN-price-box">39.000 VND</div>
+
+        
+        <a href="/vip-success" class="NN-pay-btn">Thanh toán</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<%- include('partials/footer') %>
+
+</body>
+</html>

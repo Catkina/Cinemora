@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Xem phim · Mong Ngày Mai Đến</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/watch.css" />
+    <link rel="stylesheet" href="css/list-style.css" />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<%- include('partials/header', { user }) %>
+
+<!-- CONTENT -->
+<div class="AT-content">
+    <!-- TITLE BAR -->
+    <div class="TTwatch-title">
+        <a href="/trang-tt" class="TTback">←</a>
+        <p>Xem phim Mong Ngày Mai Đến</p>
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <div class="TTvideo-box">
+        <video class="TTvideo-bg" controls autoplay>
+            <source src="/Videos/Mong Ngày Mai Đến - Surely Tomorrow - Teaser 3 Vietsub - JTBC & Coupang Play.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="TTwatch-container">
+
+        <!-- LEFT -->
+        <div class="TTleft">
+
+            <!-- ACTION BAR -->
+            <div class="TTactionBar">
+                <span>🤍 Yêu thích</span>
+                <span>➕ Thêm vào</span>
+                <span class="TTactive-btn">ON</span>
+                <span>🏷️ Bộ sưu tập</span>
+                <span>🎞️ Rạp phim</span>
+                <span>👥 Xem chung</span>
+                <span>📤 Chia sẻ</span>
+                <span class="TTrating">⭐ 9.0</span>
+                <span>⚙️ Báo lỗi</span>
+            </div>
+
+            <!-- MOVIE SUMMARY -->
+            <div class="TTmovie-summary">
+                <img src="Images/trangxp/poster.png" class="TTposter" />
+
+                <div class="TTmovie-info">
+                    <h2 class="TTtitle">Mong Ngày Mai Đến</h2>
+                    <p class="TTsubtitle">Surely Tomorrow</p>
+
+                    <div class="TTbadges">
+                        <span>MDB 8.4</span>
+                        <span>T16</span>
+                        <span>2025</span>
+                        <span>Tập 2</span>
+                    </div>
+
+                    <div class="TTtags">
+                        <span>Tình Cảm</span>
+                        <span>Lãng Mạn</span>
+                        <span>Hài</span>
+                        <span>Hàn Quốc</span>
+                    </div>
+
+                    <p class="TTdesc">
+                        Lee Gyeom Woo là CEO lâu năm trong ngành... câu chuyện bắt đầu khi anh vô tình gặp Ji Seo Woo...
+                    </p>
+
+                    <a href="/trang-tt" class="TTmore">Thông tin phim ›</a>
+                </div>
+            </div>
+
+            <!-- NOTICE -->
+            <div class="TTnotice">
+                📢 Tập 3 sẽ phát sóng lúc 05:00 ngày 14-12-2025 nhé 💜
+            </div>
+
+            <!-- EPISODES -->
+            <div class="TTepisodes">
+                <div class="TTep-head">
+                    <p>Phần 1 ▼</p>
+                    <span class="TTsub">Phụ đề</span>
+                </div>
+
+                <div class="TTep-list">
+                    <button class="TTep-btn">Tập 1</button>
+                    <button class="TTep-btn TTactive-ep">Tập 2</button>
+                </div>
+            </div>
+
+            <!-- COMMENTS -->
+            <div class="TTcomment-box">
+                <h3>Bình luận (6)</h3>
+
+                <div class="TTcomment-switch">
+                    <button class="TTactive">Bình luận</button>
+                    <button>Đánh giá</button>
+                </div>
+
+                <textarea class="TTcomment-input" placeholder="Viết bình luận..."></textarea>
+
+                <button class="TTsend">Gửi ➤</button>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="TTright">
+
+            <!-- CAST -->
+            <div class="TTcast-box">
+                <h3>Diễn viên</h3>
+
+                <div class="TTcast">
+                    <img src="Images/trangxp/pảk.png">
+                    <p>Park Seo-jun</p>
+                </div>
+
+                <div class="TTcast">
+                    <img src="Images/trangxp/won.png">
+                    <p>Won Jin-an</p>
+                </div>
+
+                <div class="TTcast">
+                    <img src="Images/trangxp/lee e.png">
+                    <p>Lee El</p>
+                </div>
+            </div>
+
+            <!-- RECOMMEND -->
+            <div class="TTrecommend">
+                <h3>Đề xuất cho bạn</h3>
+
+                <div class="TTrec-item">
+                    <img src="Images/trangxp/Image-9.png">
+                    <div>
+                        <p>Tay Đấm Bốc</p>
+                    </div>
+                </div>
+
+                <div class="TTrec-item">
+                    <img src="Images/trangxp/tội.png">
+                    <div>
+                        <p>Cái Giá Của Lời Thú Tội</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<%- include('partials/footer') %>
+
+</body>
+</html>
