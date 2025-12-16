@@ -136,3 +136,21 @@ body {
         color:#fff;
         margin-bottom:10px;
     }
+        .NN-step-text1 {
+        margin-top: 6px;
+        font-size: 13px;
+        color: #ffba3a;
+    }
+    .NN-step-text {
+        margin-top: 6px;
+        font-size: 13px;
+        color: #bababa;
+    }
+    a {
+        color: #ffffff;  
+        text-decoration: none;
+    }
+
+    a:visited {
+         color: #ffffff;    
+    }

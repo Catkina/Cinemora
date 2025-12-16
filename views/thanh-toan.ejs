@@ -10,10 +10,11 @@
 
 <!-- HEADER -->
 <header class="NN-header">
-    <div class="NN-logo">
-        <h2>Cinemora</h2>
-        <p>Đỉnh cao điện ảnh</p>
-    </div>
+    <a href="/"><div class="NN-logo">
+            <h2>Cinemora</h2>
+            <p>Đỉnh cao điện ảnh</p>
+        </div>
+    </a>
 
     <div class="NN-steps">
         <div class="NN-step">
@@ -102,5 +103,17 @@
 <!-- FOOTER -->
 <%- include('partials/footer') %>
 
+<script>
+    const options = document.querySelectorAll(".NN-option");
+
+    options.forEach(option => {
+        option.addEventListener("click", () => {
+
+            options.forEach(o => o.classList.remove("active"));
+
+            option.classList.add("active");
+        });
+    });
+</script>
 </body>
 </html>

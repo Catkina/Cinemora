@@ -21,19 +21,58 @@
     <!-- CONTENT -->
     <div class="AT-content">
         <section class="TTcategory-title">
-            <h2>Phim Tình Cảm</h2>
+            <h2><% if (lang === "ko") { %> Phim Hàn Quốc
+            <% } else if (lang === "zh") { %> Phim Trung Quốc
+            <% } else if (lang === "en") { %> Phim Âu Mỹ
+            <% } else if (lang === "ja") { %> Phim Nhật Bản
+            <% } else if (lang === "vi") { %> Phim Việt Nam
+            <% } else if (lang === "th") { %> Phim Thái Lan
+            <% } else if (lang === "zh-TW") { %> Phim Đài
+            <% } else if (lang === "fr") { %> Phim Pháp
+            <% } else if (genre === "Romance") { %> Phim Tình cảm
+            <% } else if (genre === "Action") { %> Phim Hành động
+            <% } else if (genre === "Horror") { %> Phim Kinh dị
+            <% } else if (genre === "Comedy") { %> Phim Hài
+            <% } else if (genre === "Anime") { %> Phim Anime
+            <% } else if (genre === "Detective") { %> Phim Trinh thám
+            <% } else if (genre === "Co-trang") { %> Phim Cổ trang
+            <% } else if (genre === "Scifi") { %> Phim Sci-Fi
+            <% } else if (genre === "Family") { %> Phim Gia đình
+            <% } else if (genre === "Fantasy") { %> Phim Fantasy
+            <% } else if (genre === "Series") { %> Phim Bộ
+            <% } else if (genre === "Marvel") { %> Phim Marvel
+            <% } else if (genre === "4K") { %> Phim 4K   
+            <% } else if (genre === "Sitcom") { %> Phim Sitcom
+            <% } else if (genre === "Long-tieng") { %> Phim Lồng tiếng
+            <% } else if (genre === "Xuyen-khong") { %> Phim Xuyên không
+            <% } else { %> Danh sách phim
+            <% } %></h2>
             <button class="TTfilter-btn">Bộ lọc</button>
         </section>
 
         <!-- MOVIE GRID -->
-        <a href="/trang-tt">
-        <section class="TTmovie-grid">
+         <% if (movies && movies.length > 0) { %>
+         <section class="TTmovie-grid">
+        <% movies.forEach(movie => { %>
+            <a href="/trang-tt">
             <div class="TTmovie-card">
-                <img src="Images/trangds/mai đến.png" alt="">
-                <h4>Mong Ngày Mai Đến</h4>
+                <img 
+                src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" 
+                alt="<%= movie.title %>"
+                >
+                <h4><%= movie.title %></h4>
             </div>
-        </a>
-
+            </a>
+        <% }) %>
+        </section>
+          <% } else { %>
+        <section class="TTmovie-grid">
+            <a href="/trang-tt">
+                <div class="TTmovie-card">
+                    <img src="Images/trangds/mai đến.png" alt="">
+                    <h4>Mong Ngày Mai Đến</h4>
+                </div>
+            </a>
             <div class="TTmovie-card">
                 <img src="Images/trangds/tề mi.png" alt="">
                 <h4>Chương Thượng Tề Mị</h4>
@@ -176,7 +215,7 @@
 
             <div class="TTmovie-card">
                 <img src="Images/trangds/4 vui.png" alt="">
-                <h4>Bốn CHuyện Vui</h4>
+                <h4>Bốn Chuyện Vui</h4>
             </div>
 
             <div class="TTmovie-card">
@@ -189,7 +228,7 @@
                 <h4>Luật Sư Công Ích</h4>
             </div>
         </section>
-
+        <% } %>
         <!-- PAGINATION -->
         <div class="TTpagination">
             <button>&lt;</button>

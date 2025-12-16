@@ -13,55 +13,59 @@
 </head>
 <body>
     <%- include('partials/header', { user }) %>
-    <!-- Search Box -->
-    <div class="PT-search-wrapper">
-        <form class="PT-search-box" method="POST" action="/search">
-            <button class="PT-search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <input type="text" placeholder="Tìm kiếm phim, diễn viên">
-            <button class="PT-search-submit" type="submit">Tìm kiếm</button>
-        </form>
-    </div>
+    <div class="AT-content">
+        <!-- Search Box -->
+        <div class="PT-search-wrapper">
+            <form class="PT-search-box" method="POST" action="/search">
+                <button class="PT-search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" placeholder="Tìm kiếm phim, diễn viên">
+                <button class="PT-search-submit" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
 
-    <!-- Trending Section -->
-    <div class="PT-trending-container">
-        <div class="PT-trending-title">Xu hướng gần đây</div>
+        <!-- Trending Section -->
+        <div class="PT-trending-container">
+            <div class="PT-trending-title">Xu hướng gần đây</div>
 
-        <div class="PT-movie-list" id="movieList">
+            <div class="PT-movie-list" id="movieList">
 
-            <div class="PT-movie-item">
-                <img src="Images/Home/Phim Hàn 1.webp">
-                <div class="PT-movie-name">Cái Giá Của Lời Thú Tội</div>
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Hàn 1.webp">
+                    <div class="PT-movie-name">Cái Giá Của Lời Thú Tội</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Hàn 2.webp">
+                    <div class="PT-movie-name">Dear X</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Trung 1.webp">
+                    <div class="PT-movie-name">Kiêu Khởi Thanh Nhưỡng</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Trung 2.webp">
+                    <div class="PT-movie-name">Người làm ăn lớn</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim USUK1.webp">
+                    <div class="PT-movie-name">IT: Chào Mừng Tới DERRY</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim USUK2.webp">
+                    <div class="PT-movie-name">Đường Về Cõi Chết</div>
+                </div>
+
             </div>
-
-            <div class="PT-movie-item">
-                <img src="Images/Home/Phim Hàn 2.webp">
-                <div class="PT-movie-name">Dear X</div>
-            </div>
-
-            <div class="PT-movie-item">
-                <img src="Images/Home/Phim Trung 1.webp">
-                <div class="PT-movie-name">Kiêu Khởi Thanh Nhưỡng</div>
-            </div>
-
-            <div class="PT-movie-item">
-                <img src="Images/Home/Phim Trung 2.webp">
-                <div class="PT-movie-name">Người làm ăn lớn</div>
-            </div>
-
-            <div class="PT-movie-item">
-                <img src="Images/Home/Phim USUK1.webp">
-                <div class="PT-movie-name">IT: Chào Mừng Tới DERRY</div>
-            </div>
-
-            <div class="PT-movie-item">
-                <img src="Images/Home/Phim USUK2.webp">
-                <div class="PT-movie-name">Đường Về Cõi Chết</div>
-            </div>
-
         </div>
     </div>
-
+    
+<!-- Footer -->
+<%- include('partials/footer') %>
 </body>
 </html>

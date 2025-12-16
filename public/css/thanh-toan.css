@@ -141,19 +141,10 @@
         position:relative;
     }
 
-    .NN-radio::after{
-        content:"";
-        width:10px;
-        height:10px;
-        background:#ffca58;
-        border-radius:50%;
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        opacity:0;
+    .NN-option.active .NN-radio {
+        background: #ffba3a;
+        border-color: #ffba3a;
     }
-
     .NN-option.active .radio::after{
         opacity:1;
     }
@@ -233,4 +224,12 @@
         margin-top: 6px;
         font-size: 13px;
         color: #bababa;
+    }
+    a {
+        color: #ffffff;  
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #ffffff;    
     }

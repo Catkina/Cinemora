@@ -11,11 +11,11 @@
 
     <!-- HEADER -->
     <header class="NN-header">
-        <div class="NN-logo">
+        <a href="/"><div class="NN-logo">
             <h2>Cinemora</h2>
             <p>Đỉnh cao điện ảnh</p>
         </div>
-
+        </a>
         
     <div class="NN-steps">
         
@@ -63,21 +63,21 @@
                 <img src="Images/Vip/1 thang.png">
                 <h3>1 Tháng</h3>
                 <p class="NN-price">39.000₫</p>
-                <button class="NN-select-btn1">Đã chọn</button>
+                <button class="NN-select-btn">Chọn gói</button>
             </div>
 
             <div class="NN-card">
                 <img src="Images/Vip/3 thang.png">
                 <h3>3 Tháng</h3>
                 <p class="NN-price">89.000₫</p>
-                <button class="NN-select-btn2">Chọn gói</button>
+                <button class="NN-select-btn">Chọn gói</button>
             </div>
 
             <div class="NN-card">
                 <img src="Images/Vip/6 thang.png">
                 <h3>6 Tháng</h3>
                 <p class="NN-price">149.000₫</p>
-                <button class="NN-select-btn2">Chọn gói</button>
+                <button class="NN-select-btn">Chọn gói</button>
             </div>
 
             <div class="NN-card premium">
@@ -85,17 +85,32 @@
                 <div class="NN-badge">Phổ biến nhất</div>
                 <h3>12 Tháng</h3>
                 <p class="NN-price">239.000₫</p>
-                <button class="NN-select-btn2">Chọn gói</button>
+                <button class="NN-select-btn">Chọn gói</button>
             </div>
 
         </div>
 
-        <a href="/thanh-toan" class="NN-continue-btn">Tiếp tục</a>
+        <a href="/thanh-toan" class="NN-continue-btn" style="color:black">Tiếp tục</a>
 
     </main>
 
     <!-- FOOTER -->
     <%- include('partials/footer') %>
+    <script>
+        const buttons = document.querySelectorAll(".NN-select-btn");
 
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                buttons.forEach(b => {
+                    b.classList.remove("NN-select-btn-active");
+                    b.textContent = "Chọn gói";
+                });
+
+                btn.classList.add("NN-select-btn-active");
+                btn.textContent = "Đã chọn";
+            });
+        });
+    </script>
 </body>
 </html>
