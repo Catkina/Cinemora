@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Phim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie-detail.css">
+    <link rel="stylesheet" href="css/list-style.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="PT-header">
+  <a class="PT-brand" href="/">
+    <img src="Images/Home/Logo.svg" alt="Logo" class="PT-logoimg">
+  </a>
+
+  <div class="PT-logotext">
+    Cinemora
+    <p>Đỉnh cao điện ảnh</p>
+  </div>
+
+  <div class="PT-header-right">
+    <a href="/search">
+        <button class="PT-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </a>
+
+    <nav class="PT-menu">
+        <ul class="PT-menu-list">
+
+            <li class="PT-menu-item"><a href="/phim?genre=Series">Phim bộ</a></li>
+            <li class="PT-menu-item"><a href="/phim?genre=Movie">Phim lẻ</a></li>
+
+            <!-- THỂ LOẠI -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Thể loại</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="/phim?genre=Action">Hành động</a>
+                    <a href="/phim?genre=Romance">Tình cảm</a>
+                    <a href="/phim?genre=Horror">Kinh dị</a>
+                    <a href="/phim?genre=Comedy">Hài</a>
+                    <a href="/phim?genre=Anime">Anime</a>
+                    <a href="/phim?genre=Detective">Trinh thám</a>
+                    <a href="/phim?genre=Co-trang">Cổ trang</a>
+                    <a href="/phim?genre=Scifi">Sci-Fi</a>
+                    <a href="/phim?genre=Family">Gia đình</a>
+                    <a href="/phim?genre=Fantasy">Fantasy</a>
+
+                </div>
+            </li>
+
+            <!-- QUỐC GIA -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Quốc gia</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="/phim?lang=ko">Hàn Quốc</a>
+                    <a href="/phim?lang=zh">Trung Quốc</a>
+                    <a href="/phim?lang=en">Mỹ</a>
+                    <a href="/phim?lang=ja">Nhật Bản</a>
+                    <a href="/phim?lang=vi">Việt Nam</a>
+                    <a href="/phim?lang=th">Thái Lan</a>
+                    <a href="/phim?lang=zh-TW">Đài</a>
+                    <a href="/phim?lang=fr">Pháp</a>
+                    <a href="/phim?lang=zh-HK">Hồng Kông</a>
+                </div>
+            </li>
+
+            <!-- THÊM -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Thêm</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="#">Lịch chiếu</a>
+                    <a href="#">Chủ đề</a>
+
+                </div>
+            </li>
+
+            <li class="PT-menu-item"><a href="#">Tải ứng dụng Cinemora</a></li>
+        </ul>
+    </nav>
+
+    <!-- USER -->
+        <!-- CHƯA ĐĂNG NHẬP -->
+        <div class="PT-user">
+          <a href="/login" class="PT-user-btn">
+            <i class="fa-solid fa-user"></i>
+            <span>Thành viên</span>
+          </a>
+        </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<div class="AT-content">
+    <!-- HERO BANNER -->
+    <div class="TTheader-banner">
+        <img src="Images/trangtt/Main cap.png" alt="">
+    </div>
+
+    <!-- MAIN SECTION -->
+    <div class="TTcontainer">
+
+        <!-- POSTER + INFO -->
+        <div class="TTleft-box">
+
+            <img src="Images/trangtt/movie.png" class="TTposter">
+
+            <h2 class="TTtitle">Mong Ngày Mai Đến</h2>
+            <p class="TTsubtitle">Surely Tomorrow</p>
+
+            <div class="TTbadges">
+                <span class="TTbadge">IMDb 8.4</span>
+                <span class="TTbadge">T16</span>
+                <span class="TTbadge">2025</span>
+                <span class="TTbadge">Phần 1</span>
+                <span class="TTbadge">Tập 2</span>
+            </div>
+
+            <div class="TTtags">
+                <span>Tình Cảm</span>
+                <span>Đời Thường</span>
+                <span>Hài</span>
+                <span>Tuổi Trẻ</span>
+                <span>Nghề Nghiệp</span>
+                <span>Lãng Mạn</span>
+            </div>
+
+            <p class="TTdesc-title">Giới thiệu:</p>
+            <p class="TTdesc">
+                Lee Gyeom Woo là CEO lớn. Một ngày anh vô tình gặp Ji Seo Woo, 
+                một cô gái có nụ cười ấm áp. Cả hai bị cuốn vào mối quan hệ đầy rung động…
+            </p>
+
+            <div class="TTinfo-box">
+                <p><strong>Thời lượng:</strong> 1h02m</p>
+                <p><strong>Quốc gia:</strong> Hàn Quốc</p>
+                <p><strong>Network:</strong> JTBC</p>
+                <p><strong>Studio:</strong> SLL, Storyforest</p>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+        <div class="TTright-box">
+
+            <!-- BUTTONS -->
+            <div class="TTaction-bar">
+                <a href="/trang-xem"><button class="TTwatch-btn">▶ Xem Ngay</button></a>
+                <div class="TTactions-small">
+                    <span>🤍 Yêu thích</span>
+                    <span>➕ Thêm vào</span>
+                    <span>📤 Chia sẻ</span>
+                    <span>💬 Bình luận</span>
+                    <span class="TTrating">⭐ 9.0</span>
+                </div>
+            </div>
+
+            <!-- TABS -->
+            <div class="TTtabs">
+                <span class="TTtab TTactive">Tập phim</span>
+                <span class="TTtab">Gallery</span>
+                <span class="TTtab">Diễn viên</span>
+                <span class="TTtab">Đề xuất</span>
+            </div>
+
+            <!-- NOTIFICATION -->
+            <div class="TTnotice">
+                📢 Tập 3 sẽ phát sóng lúc 05:00 ngày 14-12-2025 nhé 💜
+            </div>
+
+            <!-- EPISODE LIST -->
+            <div class="TTep-section">
+
+                <div class="TTpart-dropdown">
+                    <span class="TTpart-title">Phần 1 ▼</span>
+                    <span class="TTsub">Phụ đề</span>
+                </div>
+
+                <div class="TTep-list">
+                    <button class="TTep">Tập 1</button>
+                <button class="TTep" onclick="location.href='Trang xem.html'">Tập 2</button>
+                </div>
+
+            </div>
+
+            <!-- COMMENTS -->
+            <div class="TTcomment-box">
+                <h3>Bình luận (47)</h3>
+
+                <textarea class="TTinput" placeholder="Viết bình luận..."></textarea>
+
+                <button class="TTsend">Gửi ➤</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="PT-footer">
+    <div class="PT-footer-container">
+        <div class="PT-footer-top">
+            <div class="PT-footer-logo">
+                <img src="Images/Home/Logo.svg" alt="Cinemora Logo">
+                <div>
+                    <h2>Cinemora</h2>
+                    <p>Đỉnh cao điện ảnh</p>
+                </div>
+            </div>
+
+            <div class="PT-footer-socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fas fa-times"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="PT-footer-categories">
+            <a href="#">Hỏi đáp</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <p class="PT-footer-desc">
+            Cinemora – Phim hay mỗi ngày – Trang xem phim online chất lượng cao miễn phí Vietsub, thuyết minh, lồng tiếng full HD. 
+            Kho phim mới khổng lồ, phim chiếu rạp, phim bộ, phim lẻ từ nhiều quốc gia như Việt Nam, Hàn Quốc, Trung Quốc, 
+            Thái Lan, Nhật Bản, Âu Mỹ… đa dạng thể loại. 
+        </p>
+
+        <p class="PT-footer-copy">© 2025 Cinemora</p>
+    </div>
+</footer>
+</body>
+</html>

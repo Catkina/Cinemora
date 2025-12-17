@@ -1,34 +1,41 @@
+/* BACKGROUND */
 #AT-background {
     background-image: url("/Images/Login/loginbg.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1a1f32;
-    height: 100vh;
-    position: absolute;
+    position: fixed;
+    inset: 0;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
 }
+
+/* FRAME */
 #AT-frame {
     z-index: 2;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     max-width: 1600px;
-    min-height: 80vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     position: relative;
 }
+
+/* THIẾT LẬP CHUNG */
 body {
     font-family: "Inter", sans-serif;
 }
 html, body {
     height: 100%;
-    overflow: hidden;
 }
-.AT-login-board {
+
+/* KHỐI NỘI DUNG */
+.AT-content {
     color: #fff;
     flex-direction: column;
     gap: 5rem;
@@ -39,37 +46,14 @@ html, body {
     font-size: 14px;
     display: flex;
 }
-.AT-login-board.copyright{
+/* COPYRIGHT */
+.AT-content.copyright{
     color: #747E8C;
     align-items: center; 
     margin-top: 2rem;
 }
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.AT-content {
-    background-color: #293246;
-    border-radius: 1.5rem;
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-    display: flex;
-    position: relative;
-    overflow: hidden;
 
-        /* Animation */
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: slideDown 0.6s ease-out forwards;
-    animation-delay: 0.2s;
-}
+/* LOGO VÀ ICON */
 .AT-logo-container {
     display: flex;
     justify-content: center;
@@ -83,6 +67,42 @@ html, body {
     height: 30px;   
     padding-bottom: 2rem; 
 }
+#AT-icon{
+    width: 16px;
+    height: 16px;
+}
+
+/* Animation slide down */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CARD LOGIN */
+.AT-card {
+    background-color: #293246;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideDown 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+/* Nội dung login */
 .AT-main {
     flex-direction: column;
     gap: .75rem;
@@ -99,6 +119,9 @@ html, body {
     display: flex;
     justify-content: center;
 }
+
+/* Form */
+
 .AT-form {
   flex-direction: column;
   gap: 1rem;
@@ -114,6 +137,17 @@ html, body {
     color: #ffffffdc;
     background-color: #333F58;
 }
+
+/* Buttons */
+
+.AT-button-row{
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .AT-buttons{
     padding-top: 2rem;
     flex-direction: column;
@@ -169,17 +203,8 @@ html, body {
 .AT-btn-default.light-text{
     color:#e2fe35
 }
+
+/* Báo lỗi */
 .AT-error {
     color: #ff6b81;
-}
-#AT-icon{
-    width: 16px;
-    height: 16px;
-}
-.AT-button-row{
-    align-items: center;
-    gap: 2rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
 }

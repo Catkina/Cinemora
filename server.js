@@ -253,14 +253,42 @@ app.get('/password-success', (req, res) => {
 
 app.get("/search", (req, res) => {
     res.render("search", {
-        user: req.session.user || null
+        user: req.session.user || null,
+        q: ""
     });
 });
 
 app.get("/search-result", (req, res) => {
-    res.render("search-result", {
-        user: req.session.user || null
+  const { q } = req.query;
+
+  if (!q || q.trim() === "") {
+    return res.render("search-result", {
+      user: req.session.user || null,
+      movies: [],
+      q: ""
     });
+  }
+
+  const sql = `
+    SELECT *
+    FROM movies
+    WHERE title LIKE ?
+    ORDER BY rating DESC
+    LIMIT 30
+  `;
+
+  db.all(sql, [`%${q}%`], (err, movies) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send("DB error");
+    }
+
+    res.render("search-result", {
+      user: req.session.user || null,
+      movies,
+      q
+    });
+  });
 });
 
 app.get("/trang-ds", (req, res) => {
@@ -395,8 +423,8 @@ app.post("/quen-mat-khau", (req, res) => {
 });
 
 app.post("/search", (req, res) => {
-    //TODO
-    res.redirect("/search-result");
+  const { q } = req.body;
+  res.redirect(`/search-result?q=${encodeURIComponent(q)}`);
 });
 
 app.get("/phim", (req, res) => {

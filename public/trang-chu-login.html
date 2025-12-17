@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Cinemora - Trang chủ</title>
+</head>
+<body>
+    <!--Header-->
+<header class="PT-header">
+  <a class="PT-brand" href="/">
+    <img src="Images/Home/Logo.svg" alt="Logo" class="PT-logoimg">
+  </a>
+
+  <div class="PT-logotext">
+    Cinemora
+    <p>Đỉnh cao điện ảnh</p>
+  </div>
+
+  <div class="PT-header-right">
+    <a href="/search">
+        <button class="PT-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </a>
+
+    <nav class="PT-menu">
+        <ul class="PT-menu-list">
+
+            <li class="PT-menu-item"><a href="/phim?genre=Series">Phim bộ</a></li>
+            <li class="PT-menu-item"><a href="/phim?genre=Movie">Phim lẻ</a></li>
+
+            <!-- THỂ LOẠI -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Thể loại</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="/phim?genre=Action">Hành động</a>
+                    <a href="/phim?genre=Romance">Tình cảm</a>
+                    <a href="/phim?genre=Horror">Kinh dị</a>
+                    <a href="/phim?genre=Comedy">Hài</a>
+                    <a href="/phim?genre=Anime">Anime</a>
+                    <a href="/phim?genre=Detective">Trinh thám</a>
+                    <a href="/phim?genre=Co-trang">Cổ trang</a>
+                    <a href="/phim?genre=Scifi">Sci-Fi</a>
+                    <a href="/phim?genre=Family">Gia đình</a>
+                    <a href="/phim?genre=Fantasy">Fantasy</a>
+
+                </div>
+            </li>
+
+            <!-- QUỐC GIA -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Quốc gia</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="/phim?lang=ko">Hàn Quốc</a>
+                    <a href="/phim?lang=zh">Trung Quốc</a>
+                    <a href="/phim?lang=en">Mỹ</a>
+                    <a href="/phim?lang=ja">Nhật Bản</a>
+                    <a href="/phim?lang=vi">Việt Nam</a>
+                    <a href="/phim?lang=th">Thái Lan</a>
+                    <a href="/phim?lang=zh-TW">Đài</a>
+                    <a href="/phim?lang=fr">Pháp</a>
+                    <a href="/phim?lang=zh-HK">Hồng Kông</a>
+                </div>
+            </li>
+
+            <!-- THÊM -->
+            <li class="PT-menu-item PT-has-dropdown">
+                <a href="#">Thêm</a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <div class="PT-dropdown">
+                    <a href="#">Lịch chiếu</a>
+                    <a href="#">Chủ đề</a>
+
+                </div>
+            </li>
+
+            <li class="PT-menu-item"><a href="#">Tải ứng dụng Cinemora</a></li>
+        </ul>
+    </nav>
+
+    <!-- USER -->
+        <!-- ĐÃ ĐĂNG NHẬP -->
+        <div class="PT-user PT-has-dropdown">
+          <img src="Images/Home/User.svg" alt="User Icon">
+          <i class="fa-solid fa-caret-down"></i>
+
+          <div class="PT-dropdown">
+            <a href="#">Thông tin cá nhân</a>
+            <a href="/vip">Nâng cấp tài khoản</a>
+            <a href="#">Lịch sử xem</a>
+            <a href="#">Danh sách yêu thích</a>
+            <a href="/logout">Đăng xuất</a>
+          </div>
+        </div>
+  </div>
+</header>
+
+<!--Content-->
+<div class="AT-content">
+
+  <!-- Banner -->
+  <section class="PT-hero-banner">
+      <!-- Overlay tối mờ -->
+      <div class="PT-banner-overlay"></div>
+
+      <!-- Nội dung bên trái -->
+      <div class="PT-banner-content">
+          <h3 class="PT-movie-subtitle">Detective Conan Movie 28: One - Eyed Flashback</h3>
+
+          <div class="PT-movie-tags">
+              <span class="PT-tag PT-imdb">IMDb 6.8</span>
+              <span class="PT-tag">T16</span>
+              <span class="PT-tag">2025</span>
+              <span class="PT-tag">1h 49m</span>
+              
+          </div>
+          <div class="PT-movie-tags-category">
+              <span class="PT-tag-category">Hành Động</span>
+              <span class="PT-tag-category">Chiếu Rạp</span>
+              <span class="PT-tag-category">Hình Sự</span>
+              <span class="PT-tag-category">Anime</span>
+              <span class="PT-tag-category">Hoạt hình</span>
+          </div>
+
+          <p class="PT-movie-desc">
+              Trên những ngọn núi tuyết của Nagano, một vụ án bí ẩn đã đưa Conan và các thám tử quay trở lại quá khứ. Thanh tra Yamato Kansuke - người đã bị thương nặng trong một trận tuyết lở nhiều năm trước - bất ngờ phải đối mặt với những ký ức đau thương của...
+          </p>
+
+          <div class="PT-banner-buttons">
+              <a href="/trang-xem"><button class="PT-btn PT-play">
+                  <i class="fa-solid fa-play"></i> Xem ngay
+              </button></a>
+              <button class="PT-btn PT-like">
+                  <i class="fa-regular fa-heart"></i>
+              </button>
+              <a href="/trang-tt"><button class="PT-btn PT-info">
+                  <i class="fa-solid fa-circle-info"></i>
+              </button></a>
+          </div>
+      </div>
+
+      <!-- Slider nhỏ bên phải -->
+      <div class="PT-banner-thumbs">
+          <img src="Images/Home/Thumb1.png" alt="Thumb 1">
+          <img src="Images/Home/Thumb2.png" alt="Thumb 2">
+          <img src="Images/Home/Thumb3.png" alt="Thumb 3">
+          <img src="Images/Home/Thumb4.png" alt="Thumb 4">
+          <img src="Images/Home/Thumb5.png" alt="Thumb 5">
+      </div>
+  </section>
+
+  <!--Chủ đề-->
+  <div class="PT-container">
+      <h2 class="PT-title">Bạn đang quan tâm gì?</h2>
+
+      <div class="PT-topic-grid">
+          <div class="PT-topic-box gradient-blue">
+              <h3>Marvel</h3>
+              <a href="#">Xem chủ đề<i class="fa-solid fa-angle-right"></i></a> 
+          </div>
+
+          <div class="PT-topic-box gradient-purple">
+              <h3>4K</h3>
+              <a href="#">Xem chủ đề<i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="PT-topic-box gradient-green">
+              <h3>Sitcom</h3>
+              <a href="#">Xem chủ đề<i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="PT-topic-box gradient-purple-soft">
+              <h3>Lồng Tiếng</h3>
+              <a href="#">Xem chủ đề<i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="PT-topic-box gradient-orange">
+              <h3>Xuyên Không</h3>
+              <a href="#">Xem chủ đề<i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="PT-topic-box gradient-red">
+              <h3>Cổ Trang</h3>
+              <a href="#">Xem chủ đề<i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="PT-topic-box more-topics">
+            <h3>+4 chủ đề</h3>
+          </div>
+      </div>
+  </div>
+
+  <!--PHIM HOT-->
+  <div class="PT-movie-sections-bg">
+    <div class="PT-movie-sections-inner">
+
+      <!-- === PHIM HÀN QUỐC === -->
+  <div class="PT-movie-section">
+
+    <div class="PT-left-side">
+      <h2 class="PT-section-title"><span>Phim Hàn</span> Quốc mới</h2>
+      <a href="/phim?lang=ko" class="PT-see-all">Xem toàn bộ <i class="fa-solid fa-angle-right"></i> </a>
+    </div>
+
+    <div class="PT-right-side">
+      <div class="PT-movie-slider">
+      <!-- BUTTON PREV -->
+  <button class="PT-prev-btn">
+    <i class="fa-solid fa-circle-chevron-left"></i>
+  </button>
+      <!-- LIST PHIM -->
+      <div class="PT-movie-list" id="hanquoc-list">
+        
+        <!-- Movie 1 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim Hàn 1.webp" alt="Cái Giá Của Lời Thú Tội">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 16</div>
+                <div class="PT-tag tm">TM. 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Cái Giá Của Lời Thú Tội</p>
+            <p class="PT-mv-sub">The Price of Confession</p>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim Hàn 2.webp" alt="X Thân Mến">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 12</div>
+                <div class="PT-tag tm">TM. 12</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">X Thân Mến</p>
+            <p class="PT-mv-sub">Dear X</p>
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim Hàn 3.webp" alt="Nụ Hôn Bùng Nổ">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 8</div>
+                <div class="PT-tag tm">TM. 6</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Nụ Hôn Bùng Nổ</p>
+            <p class="PT-mv-sub">Dynamite Kiss</p>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- BUTTON NEXT -->
+  <button class="PT-next-btn">
+    <i class="fa-solid fa-circle-chevron-right"></i>
+  </button>
+  </div>
+    </div>
+
+  </div>
+  <div class="PT-movie-section">
+    <div class="PT-left-side">
+      <h2 class="PT-section-title"><span>Phim Trung</span> Quốc mới</h2>
+      <a href="/phim?lang=zh" class="PT-see-all">
+        Xem toàn bộ <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </div>
+
+    <div class="PT-right-side PT-movie-slider">
+
+      <!-- BUTTON PREV -->
+      <button class="PT-prev-btn">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </button>
+
+      <!-- LIST PHIM -->
+      <div class="PT-movie-list" id="trungquoc-list">
+
+        <!-- Movie 1 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim Trung 1.webp" alt="Kiêu Khởi Thanh Nhưỡng">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 26</div>
+                <div class="PT-tag tm">TM. 0</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Kiêu Khởi Thanh Nhưỡng</p>
+            <p class="PT-mv-sub">Love on the Turqouise Land</p>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim Trung 2.webp" alt="Người Làm Ăn Lớn">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 5</div>
+                <div class="PT-tag tm">TM. 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Người Làm Ăn Lớn</p>
+            <p class="PT-mv-sub">Legend of the Magnet</p>
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim Trung 3.png" alt="Nữ Hoàng Tin Tức">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 8</div>
+                <div class="PT-tag tm">TM. 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Nữ Hoàng Tin Tức</p>
+            <p class="PT-mv-sub">The QUEEN of the News</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTON NEXT -->
+      <button class="PT-next-btn">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+
+    </div>
+  </div>
+
+      <!-- === PHIM US-UK === -->
+  <div class="PT-movie-section">
+    <div class="PT-left-side">
+      <h2 class="PT-section-title"><span>Phim US-UK</span> mới</h2>
+      <a href="/phim?lang=en" class="PT-see-all">
+        Xem toàn bộ <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </div>
+
+    <div class="PT-right-side PT-movie-slider">
+
+      <!-- BUTTON PREV -->
+      <button class="PT-prev-btn">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </button>
+
+      <!-- MOVIE LIST -->
+      <div class="PT-movie-list" id="usuk-list">
+
+        <!-- Movie 1 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim USUK1.webp" alt="IT: Chào Mừng Tới DERRY">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 2</div>
+                <div class="PT-tag tm">TM. 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">IT: Chào Mừng Tới DERRY</p>
+            <p class="PT-mv-sub">IT: Welcome to DERRY</p>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/Phim USUK2.webp" alt="Đường Về Cõi Chết">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 4</div>
+                <div class="PT-tag tm">TM. 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Đường Về Cõi Chết</p>
+            <p class="PT-mv-sub">Down Cemetety Road</p>
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="PT-movie-wrapper">
+          <div class="PT-movie-card">
+            <div class="PT-mv-thumb">
+              <img src="Images/Home/PhimUSUK3.webp" alt="Thiên Đường Phù Hoa">
+              <div class="PT-tags-row">
+                <div class="PT-tag pd">PD. 6</div>
+                <div class="PT-tag tm">TM. 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="PT-movie-title">
+            <p class="PT-mv-name">Thiên Đường Phù Hoa</p>
+            <p class="PT-mv-sub">Palm Royale</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTON NEXT -->
+      <button class="PT-next-btn">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!--Footer-->
+<footer class="PT-footer">
+    <div class="PT-footer-container">
+        <div class="PT-footer-top">
+            <div class="PT-footer-logo">
+                <img src="Images/Home/Logo.svg" alt="Cinemora Logo">
+                <div>
+                    <h2>Cinemora</h2>
+                    <p>Đỉnh cao điện ảnh</p>
+                </div>
+            </div>
+
+            <div class="PT-footer-socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fas fa-times"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="PT-footer-categories">
+            <a href="#">Hỏi đáp</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <p class="PT-footer-desc">
+            Cinemora – Phim hay mỗi ngày – Trang xem phim online chất lượng cao miễn phí Vietsub, thuyết minh, lồng tiếng full HD. 
+            Kho phim mới khổng lồ, phim chiếu rạp, phim bộ, phim lẻ từ nhiều quốc gia như Việt Nam, Hàn Quốc, Trung Quốc, 
+            Thái Lan, Nhật Bản, Âu Mỹ… đa dạng thể loại. 
+        </p>
+
+        <p class="PT-footer-copy">© 2025 Cinemora</p>
+    </div>
+</footer>
+</body>
+</html>

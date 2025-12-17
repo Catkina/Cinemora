@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemora - Đặc quyền VIP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vip.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="NN-header">
+        <a href="/"><div class="NN-logo">
+            <h2>Cinemora</h2>
+            <p>Đỉnh cao điện ảnh</p>
+        </div>
+        </a>
+        
+    <div class="NN-steps">
+        
+        <div class="NN-step">
+            <div class="NN-circle active">1</div>
+            <span class="NN-step-text1">Chọn gói</span>
+        </div>
+
+        <div class="NN-line"></div>
+
+        <div class="NN-step">
+            <div class="NN-circle">2</div>
+            <span class="NN-step-text">Thanh toán</span>
+        </div>
+
+        <div class="NN-line"></div>
+
+        <div class="NN-step">
+            <div class="NN-circle">3</div>
+            <span class="NN-step-text">Kết quả</span>
+        </div>
+
+    </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="NN-container">
+
+        <h2 class="NN-title">Đặc quyền VIP</h2>
+
+        <div class="NN-benefit">
+            <div class="NN-benefit"><span class="NN-icon">✔</span> Không quảng cáo</div>
+            <div class="NN-benefit"><span class="NN-icon">✔</span> Full HD/4K</div>
+            <div class="NN-benefit"><span class="NN-icon">✔</span> Thuyết minh/Phụ đề</div>
+            <div class="NN-benefit"><span class="NN-icon">✔</span> Xem trên nhiều thiết bị</div>
+            <div class="NN-benefit"><span class="NN-icon">✔</span> Xem sớm nhất</div>
+        </div>
+
+
+        <!-- PACKAGE LIST -->
+        <div class="NN-packages">
+
+            <div class="NN-card">
+                <img src="Images/Vip/1 thang.png">
+                <h3>1 Tháng</h3>
+                <p class="NN-price">39.000₫</p>
+                <button class="NN-select-btn">Chọn gói</button>
+            </div>
+
+            <div class="NN-card">
+                <img src="Images/Vip/3 thang.png">
+                <h3>3 Tháng</h3>
+                <p class="NN-price">89.000₫</p>
+                <button class="NN-select-btn">Chọn gói</button>
+            </div>
+
+            <div class="NN-card">
+                <img src="Images/Vip/6 thang.png">
+                <h3>6 Tháng</h3>
+                <p class="NN-price">149.000₫</p>
+                <button class="NN-select-btn">Chọn gói</button>
+            </div>
+
+            <div class="NN-card premium">
+                <img src="Images/Vip/12 thang.png">
+                <div class="NN-badge">Phổ biến nhất</div>
+                <h3>12 Tháng</h3>
+                <p class="NN-price">239.000₫</p>
+                <button class="NN-select-btn">Chọn gói</button>
+            </div>
+
+        </div>
+
+        <a href="/thanh-toan" class="NN-continue-btn" style="color:black">Tiếp tục</a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="PT-footer">
+        <div class="PT-footer-container">
+            <div class="PT-footer-top">
+                <div class="PT-footer-logo">
+                    <img src="Images/Home/Logo.svg" alt="Cinemora Logo">
+                    <div>
+                        <h2>Cinemora</h2>
+                        <p>Đỉnh cao điện ảnh</p>
+                    </div>
+                </div>
+
+                <div class="PT-footer-socials">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fas fa-times"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="PT-footer-categories">
+                <a href="#">Hỏi đáp</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Liên hệ</a>
+            </div>
+
+            <p class="PT-footer-desc">
+                Cinemora – Phim hay mỗi ngày – Trang xem phim online chất lượng cao miễn phí Vietsub, thuyết minh, lồng tiếng full HD. 
+                Kho phim mới khổng lồ, phim chiếu rạp, phim bộ, phim lẻ từ nhiều quốc gia như Việt Nam, Hàn Quốc, Trung Quốc, 
+                Thái Lan, Nhật Bản, Âu Mỹ… đa dạng thể loại. 
+            </p>
+
+            <p class="PT-footer-copy">© 2025 Cinemora</p>
+        </div>
+    </footer>
+    <script>
+        const buttons = document.querySelectorAll(".NN-select-btn");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                buttons.forEach(b => {
+                    b.classList.remove("NN-select-btn-active");
+                    b.textContent = "Chọn gói";
+                });
+
+                btn.classList.add("NN-select-btn-active");
+                btn.textContent = "Đã chọn";
+            });
+        });
+    </script>
+</body>
+</html>

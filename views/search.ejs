@@ -20,7 +20,13 @@
                 <button class="PT-search-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <input type="text" placeholder="Tìm kiếm phim, diễn viên">
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="Tìm kiếm phim, diễn viên"
+                    value="<%= q || '' %>"
+                    required
+                >
                 <button class="PT-search-submit" type="submit">Tìm kiếm</button>
             </form>
         </div>

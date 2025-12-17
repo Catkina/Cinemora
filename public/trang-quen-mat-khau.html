@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quên mật khẩu</title>
-    <link rel="stylesheet" href="/css/login-style.css">
+    <link rel="stylesheet" href="css/login-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preload" href="/Images/Login/loginbg.jpg" as="image">
+    <link rel="preload" href="Images/Login/loginbg.jpg" as="image">
 </head>
 <body>
+    <!-- Background -->
     <div id="AT-background"></div>
+    <!-- Content -->
     <div id="AT-frame">
         <div class="AT-content" style="gap: 8.6rem;">
+            <!-- Logo -->
             <div class="AT-logo-container">
                 <a href="/">
-                    <img alt="Logo Cinemora" src="/Images/Login/logo.svg">
+                    <img alt="Logo Cinemora" src="Images/Login/logo.svg">
                 </a>
             </div>
+
+            <!-- Card -->
             <div class="AT-card">
                 <div class="AT-main">
                     <div class="AT-heading">Quên mật khẩu</div>
                     <div>Nhập email tài khoản để yêu cầu mật khẩu mới</div>
-
-                    <% if (error) { %>
-                        <p class="AT-error"><%= error %></p>
-                    <% } %>
+                    <p class="AT-error">Email chưa được đăng ký</p>
                     <form class="AT-form" method="POST" action="/quen-mat-khau">
                         <input class="AT-input" required placeholder="Email" type="email" name="email">
                         <div class="AT-buttons">
@@ -38,6 +40,8 @@
                     </form>
                 </div>
             </div>
+
+            <!-- Copyright -->
             <div class="AT-content copyright"><span>© Copyright 2025 <span style="color:#A4A9A8">Cinemora</span></span></div>
         </div>
     </div>

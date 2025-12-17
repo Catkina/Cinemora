@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Tìm kiếm</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="PT-header">
+    <a class="PT-brand" href="/">
+        <img src="Images/Home/Logo.svg" alt="Logo" class="PT-logoimg">
+    </a>
+
+    <div class="PT-logotext">
+        Cinemora
+        <p>Đỉnh cao điện ảnh</p>
+    </div>
+
+    <div class="PT-header-right">
+        <a href="/search">
+            <button class="PT-search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </a>
+
+        <nav class="PT-menu">
+            <ul class="PT-menu-list">
+
+                <li class="PT-menu-item"><a href="/phim?genre=Series">Phim bộ</a></li>
+                <li class="PT-menu-item"><a href="/phim?genre=Movie">Phim lẻ</a></li>
+
+                <!-- THỂ LOẠI -->
+                <li class="PT-menu-item PT-has-dropdown">
+                    <a href="#">Thể loại</a>
+                    <i class="fa-solid fa-caret-down"></i>
+
+                    <div class="PT-dropdown">
+                        <a href="/phim?genre=Action">Hành động</a>
+                        <a href="/phim?genre=Romance">Tình cảm</a>
+                        <a href="/phim?genre=Horror">Kinh dị</a>
+                        <a href="/phim?genre=Comedy">Hài</a>
+                        <a href="/phim?genre=Anime">Anime</a>
+                        <a href="/phim?genre=Detective">Trinh thám</a>
+                        <a href="/phim?genre=Co-trang">Cổ trang</a>
+                        <a href="/phim?genre=Scifi">Sci-Fi</a>
+                        <a href="/phim?genre=Family">Gia đình</a>
+                        <a href="/phim?genre=Fantasy">Fantasy</a>
+
+                    </div>
+                </li>
+
+                <!-- QUỐC GIA -->
+                <li class="PT-menu-item PT-has-dropdown">
+                    <a href="#">Quốc gia</a>
+                    <i class="fa-solid fa-caret-down"></i>
+
+                    <div class="PT-dropdown">
+                        <a href="/phim?lang=ko">Hàn Quốc</a>
+                        <a href="/phim?lang=zh">Trung Quốc</a>
+                        <a href="/phim?lang=en">Mỹ</a>
+                        <a href="/phim?lang=ja">Nhật Bản</a>
+                        <a href="/phim?lang=vi">Việt Nam</a>
+                        <a href="/phim?lang=th">Thái Lan</a>
+                        <a href="/phim?lang=zh-TW">Đài</a>
+                        <a href="/phim?lang=fr">Pháp</a>
+                        <a href="/phim?lang=zh-HK">Hồng Kông</a>
+                    </div>
+                </li>
+
+                <!-- THÊM -->
+                <li class="PT-menu-item PT-has-dropdown">
+                    <a href="#">Thêm</a>
+                    <i class="fa-solid fa-caret-down"></i>
+
+                    <div class="PT-dropdown">
+                        <a href="#">Lịch chiếu</a>
+                        <a href="#">Chủ đề</a>
+
+                    </div>
+                </li>
+
+                <li class="PT-menu-item"><a href="#">Tải ứng dụng Cinemora</a></li>
+            </ul>
+        </nav>
+
+        <!-- USER -->
+            <!-- CHƯA ĐĂNG NHẬP -->
+            <div class="PT-user">
+            <a href="/login" class="PT-user-btn">
+                <i class="fa-solid fa-user"></i>
+                <span>Thành viên</span>
+            </a>
+            </div>
+    </div>
+    </header>
+
+    <div class="AT-content">
+        <!-- Search Box -->
+        <div class="PT-search-wrapper">
+            <form class="PT-search-box" method="POST" action="/search">
+                <button class="PT-search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" placeholder="Tìm kiếm phim, diễn viên">
+                <button class="PT-search-submit" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+
+        <!-- Trending Section -->
+        <div class="PT-trending-container">
+            <div class="PT-trending-title">Xu hướng gần đây</div>
+
+            <div class="PT-movie-list" id="movieList">
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Hàn 1.webp">
+                    <div class="PT-movie-name">Cái Giá Của Lời Thú Tội</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Hàn 2.webp">
+                    <div class="PT-movie-name">Dear X</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Trung 1.webp">
+                    <div class="PT-movie-name">Kiêu Khởi Thanh Nhưỡng</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim Trung 2.webp">
+                    <div class="PT-movie-name">Người làm ăn lớn</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim USUK1.webp">
+                    <div class="PT-movie-name">IT: Chào Mừng Tới DERRY</div>
+                </div>
+
+                <div class="PT-movie-item">
+                    <img src="Images/Home/Phim USUK2.webp">
+                    <div class="PT-movie-name">Đường Về Cõi Chết</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer -->
+<footer class="PT-footer">
+    <div class="PT-footer-container">
+        <div class="PT-footer-top">
+            <div class="PT-footer-logo">
+                <img src="Images/Home/Logo.svg" alt="Cinemora Logo">
+                <div>
+                    <h2>Cinemora</h2>
+                    <p>Đỉnh cao điện ảnh</p>
+                </div>
+            </div>
+
+            <div class="PT-footer-socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fas fa-times"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="PT-footer-categories">
+            <a href="#">Hỏi đáp</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <p class="PT-footer-desc">
+            Cinemora – Phim hay mỗi ngày – Trang xem phim online chất lượng cao miễn phí Vietsub, thuyết minh, lồng tiếng full HD. 
+            Kho phim mới khổng lồ, phim chiếu rạp, phim bộ, phim lẻ từ nhiều quốc gia như Việt Nam, Hàn Quốc, Trung Quốc, 
+            Thái Lan, Nhật Bản, Âu Mỹ… đa dạng thể loại. 
+        </p>
+
+        <p class="PT-footer-copy">© 2025 Cinemora</p>
+    </div>
+</footer>
+</body>
+</html>
